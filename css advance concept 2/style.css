@@ -1,0 +1,49 @@
+.container{ 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+.item{
+    background-color: lightblue;
+    padding: 20px;
+    align-items: center;
+}
+.filterdimg{
+    width: 40vh;
+    height: 40vh;
+    border-radius: 500px;
+    object-fit: cover;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+.filterdimg:hover{
+    filter: grayscale(0%);
+}
+/* label{
+    display: flex;
+    align-items: center;
+} */
+.customcheckbox{
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px blue solid;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.customcheckbox:checked::before{
+    content: "✓";
+    color: blue;
+    font-size: 16px;
+    text-align: center;
+    display: block;
+}
+
+/* gradient color use */
+h1{
+    background: linear-gradient(90deg, red, blue);
+    /* -webkit-background-clip: text; */
+    background-clip: text;
+    color: transparent;
+    font-size: 48px;
+}

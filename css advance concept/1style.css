@@ -1,0 +1,69 @@
+/* hover  */
+button.hoverbtn:hover{
+    background-color: blue;
+    color: white ; 
+}
+
+/* focus */
+input:focus{
+    border-color: green;
+    box-shadow: 0 0 5px green; 
+}
+
+/* nth child() */
+li:nth-child(1){
+    text-decoration: none;
+    background-color: black;
+    color: white;
+}
+li:nth-child(2){
+    background-color: green;
+}
+li:nth-child(3){
+    background-color: pink;
+    color: white;
+}
+ 
+/* not()  */
+p:not(.not){
+    color: green; 
+}
+
+h2::after{
+    content:" $$";
+    color: red;
+}
+h2::before{
+    content: "&&";
+    color: blue;
+}
+
+p.fl::first-letter{
+    font-size: 2em;
+    font-weight: bold;
+}
+p.fl2::first-line{
+    font-size: 2em;
+    font: bold;
+}
+
+button.transit{
+    background-color: greenyellow;
+    transition: background-color 0.3s;
+}
+button.transit:hover{
+    background-color: red;
+}
+
+@keyframes bounce {
+    0%, 100%{
+        transform: translateY(0)
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+div.anim{
+    animation: bounce 1s infinite;
+}
