@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
     <header>
@@ -73,80 +74,109 @@
       </div>
     </section>
     <!-- skill section -->
-    <section id="skills">
+    <section id="skills" class="skill">
       <h2>Skills</h2>
-      <div>
-        <div>
+      <div class="skillgrid">
+        <div class="skillcard">
+          <i class="fa-brands fa-html5"></i>
           <h3>HTML5</h3>
         </div>
-        <div>
+        <div class="skillcard">
+          <i class="fa-brands fa-css3-alt"></i>
           <h3>CSS3</h3>
         </div>
-        <div>
+        <div class="skillcard">
+          <i class="fa-brands fa-js"></i>
           <h3>JavaScript</h3>
         </div>
-        <div>
+        <div class="skillcard">
+          <i class="fa-brands fa-angular"></i>
           <h3>Angular</h3>
         </div>
-        <div>
-          <h3>Node.JS</h3>
+        <div class="skillcard">
+          <i class="fa-brands fa-node"></i>
+          <h3>Node.js</h3>
         </div>
       </div>
     </section>
     <!-- project section -->
-    <section id="projects">
+    <section id="projects" class="project">
       <h2>Projects</h2>
-      <div>
-        <div>
-          <img src="https://placehold.co/400" alt="project1" />
+      <div class="project-grid">
+        <div class="project-card">
+          <img  src="https://placehold.co/400" alt="project1" />
           <h3>E-commerce Platform</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Voluptatibus modi corrupti accusantium.
           </p>
-          <a href="#">View Project</a>
+          <a href="#" class="btn btndark">View Project</a>
         </div>
-        <div>
+        <div class="project-card">
           <img src="https://placehold.co/400" alt="project2" />
           <h3>AI Chatbot</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Voluptatibus modi corrupti accusantium.
           </p>
-          <a href="#">View Project</a>
+          <a href="#" class="btn btndark">View Project</a>
         </div>
-        <div>
+        <div class="project-card">
           <img src="https://placehold.co/400" alt="project3" />
           <h3>Portfolio Website</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Voluptatibus modi corrupti accusantium.
           </p>
-          <a href="#">View Project</a>
+          <a href="#" class="btn btndark">View Project</a>
         </div>
       </div>
     </section>
     <!-- contact section  -->
-    <section id="contact">
+    <section id="contact" class="contact">
       <h2>Contact Me</h2>
-      <div>
+      <div class="contact-content">
         <p>
           If you'd like to collabrate or have any question, feel free to reach
           out!
         </p>
       </div>
       <form>
-       <input id="name" name="name" type="text" placeholder="Your Name" required>
-       <input id="email" name="email" type="email" placeholder="Email" required>
+       <input 
+        id="name"
+        name="name" 
+        type="text" 
+        placeholder="Your Name" 
+        required>
+       <input 
+        id="email" 
+        name="email" 
+        type="email" 
+        placeholder="Email" 
+        required>
 
-       <textarea id="message" name="message" placeholder="Your Message"></textarea>
+       <textarea
+        id="message" 
+        name="message" 
+        placeholder="Your Message"
+        required
+        ></textarea>
 
-       <button type="submit">Send M</button>
+       <button 
+       class="btn btndark"
+       type="submit">
+       Send Message
+       </button>
       </form>
     </section>
-
-    <footer>
+<!--      footer  -->
+    <footer class="footer">
         <p> &copy; 2026 learning coding . All Rights are Reserved </p>
+        <div class="social-link">
+          <a href="#"><i class="fab fa-linkedin" ></i></a>
+          <a href="#"><i class="fab fa-github" ></i></a>
+          <a href="#"><i class="fab fa-twitter" ></i></a>
+        </div>
     </footer>
   </body>
 </html>
