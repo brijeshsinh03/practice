@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-commerce</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="container">
+      <!-- search bar -->
+      <form action="" class="search">
+        <input type="text" placeholder="Search..." />
+        <button type="button">🔍</button>
+      </form>
+      <!-- navigation -->
+      <nav class="nav-menu">
+        <ul>
+          <li>
+            <a href="#Home">Home</a>
+          </li>
+          <li>
+            <a href="#Shop">shop</a>
+          </li>
+          <li>
+            <a href="#Category">Categories</a>
+          </li>
+          <li>
+            <a href="#Contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- cart -->
+      <div class="cart-container">
+        <a href="#">
+          <i class="fa-solid fa-cart-shopping"></i>
+          Cart(<span id="cart-count">0</span>)
+        </a>
+      </div>
+    </header>
+    <!-- hero section -->
+    <section id="Home" class="hero">
+      <div class="hero-wrapper">
+        <!-- left content -->
+        <div class="left-content">
+          <h1>Premium Audio. Pure Power.</h1>
+          <p>
+            Discover high-quality headphones, speakers, and accessories designed
+            for pure sound.
+          </p>
+          <a href="" class="btn-primary">Shop Now</a>
+          <a href="" class="btn-secondary">Explore Collection</a>
+        </div>
+        <!-- rigth content -->
+        <div class="right-content">
+          <img src="assest/headphone-hero.avif" alt="velora_headphone" />
+        </div>
+      </div>
+    </section>
+    <!-- categories -->
+    <section id="Category" class="categories">
+      <h2>Shop By Category</h2>
+      <!-- category card 1 -->
+      <div class="category-wrapper">
+        <div class="category-card">
+          <a href="#">
+            <img src="assest/headphone 1.avif" alt="velora_headphone1" />
+            <h3>Headphone</h3>
+            <p>Wireless & Wired</p>
+          </a>
+        </div>
+        <div class="category-card">
+          <a href="#">
+            <img src="assest/bluetoothsp.avif" alt="velora_speaker" />
+            <h3>Bluetooth Speaker</h3>
+            <p>Portable & Powerful</p>
+          </a>
+        </div>
+        <div class="category-card">
+          <a href="#">
+            <img src="assest/earphone.avif" alt="velora_earphone" />
+            <h3>Earphone</h3>
+            <p>In Ear & Comfortable</p>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- featured products section -->
+    <section id="Shop" class="featured-products">
+      <h2>Featured Products</h2>
+      <div class="products-wrapper">
+        <!-- product 1 -->
+        <div class="product-card">
+          <img src="assest/product1.avif" alt="Velora X100 Headphones" />
+          <h3>Velora X100 Wireless Headphones</h3>
+          <p class="price">₹2,999</p>
+          <button
+            class="add-to-cart"
+            data-name="Velora X100 Wireless Headphones"
+            data-price="₹2,999"
+          >
+            Add to Cart
+          </button>
+        </div>
+        <!-- Product 2 -->
+        <div class="product-card">
+          <img src="assest/product2.avif" alt="Velora BassPro Speaker" />
+          <h3>Velora BassPro Speaker</h3>
+          <p class="price">₹4,499</p>
+          <button
+          class="add-to-cart"
+            data-name="Velora BassPro Speaker"
+            data-price="₹4,499">Add to Cart</button>
+        </div>
+        <!-- Product 3 -->
+        <div class="product-card">
+          <img src="assest/product3.avif" alt="Velora AirPods Lite" />
+          <h3>Velora AirPods Lite</h3>
+          <p class="price">₹1,999</p>
+          <button
+          class="add-to-cart"
+          data-name="Velora AirPods Lite"
+          data-price="₹1,999">Add to Cart</button>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-card">
+          <img src="assest/product4.avif" alt="Velora Pro Sound Headset" />
+          <h3>Velora Pro Sound Headset</h3>
+          <p class="price">₹3,499</p>
+          <button
+          class="add-to-cart"
+          data-name="Velora Pro Sound Headset"
+          data-price="₹3,499">Add to Cart</button>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer-wrapper">
+        <!-- Brand Info -->
+        <div class="footer-col">
+          <h3>Velora</h3>
+          <p>
+            Premium audio products designed for powerful sound and modern
+            lifestyle.
+          </p>
+        </div>
+        <!-- Quick Links -->
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#Shop">Shop</a></li>
+            <li><a href="#Category">Categories</a></li>
+            <li><a href="#Contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Categories -->
+        <div class="footer-col">
+          <h4>Categories</h4>
+          <ul>
+            <li><a href="#Category">Headphones</a></li>
+            <li><a href="#Category">Bluetooth Speakers</a></li>
+            <li><a href="#Category">Earphones</a></li>
+            <li><a href="#Category">Accessories</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div id="Contact" class="footer-col">
+          <h4>Contact Us</h4>
+          <p>Email: example@gmail.com</p>
+          <p>Phone: +91 99999 99999</p>
+        </div>
+      </div>
+
+      <!-- Bottom Line -->
+      <div class="footer-bottom">
+        <p>© 2026 Velora. All Rights Reserved.</p>
+      </div>
+    </footer>
+    <script>
+let cart = [];
+
+const cartCount = document.getElementById("cart-count");
+const buttons = document.querySelectorAll(".add-to-cart");
+
+buttons.forEach(button => {
+    button.addEventListener("click", function() {
+
+        const name = this.dataset.name;
+        const price = parseFloat(this.dataset.price);
+
+        cart.push({ name, price });
+
+        updateCart();
+    });
+});
+
+function updateCart() {
+    cartCount.textContent = cart.length;
+}
+    </script>
+  </body>
+</html>

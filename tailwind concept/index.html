@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+
+    <!-- md lg xl etc for responsive in tailwind -->
+
+    <div class="text-center 
+               bg-blue-300 
+               text-white 
+               p-4 
+               mt-3 
+               md:text-right 
+               lg:text-left ">
+              this is style div
+    </div>
+
+    <!-- button edit -->
+
+    <div class="text-center">
+        <button 
+        class="bg-black
+              hover:bg-white
+              text-white
+              hover:text-black
+              border
+              border-blue-500
+              mt-3
+              mb-3
+              p-2
+              rounded-xl
+              font-bold">
+        click me
+        </button>
+    </div>
+
+    <!-- flex-box  -->
+
+    <div class="flex justify-center items-center h-32 bg-gray-200">
+        <p>Hello,World</p>
+    </div>
+
+    <!-- grid -->
+
+    <div class="grid grid-cols-3 gap-4 text-center font-bold">
+        <div class="bg-blue-200 p-4">Item1</div>
+        <div class="bg-blue-300 p-4">Item2</div>
+        <div class="bg-blue-400 p-4">Item3</div>
+    </div>
+
+    <!-- border & shadow -->
+
+    <div class="border border-red-400 p-4 m-3 rounded-full text-center shadow-lg bg-white"> 
+        This is rounded border div
+    </div>
+</body>
+</html>
